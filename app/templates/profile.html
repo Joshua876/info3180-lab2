@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile">
+    <div class="styling">
+        <img class="pic" src="{{url_for('static',filename='me.jpg')}}"/>
+        <p class="pname">Joshua McIntosh</p>
+        <p>@JoshuaM</p>
+        <p>Kingston, Jamaica</p>
+        <p>Joined {{d_joined}}</p>
+    </div>
+
+    <p class="description">My name is Joshua McIntosh. I am 21 years old and I play basketball. My major is Computer Science.</p>
+
+    <div class="stats">
+        <div class="pstats">
+            <div class="postsnum">10</div>
+            <div class="poststext">Posts</div>
+        </div>
+
+        <div class="pstats">
+            <div class="postsnum">100</div>
+            <div class="poststext">Following</div>
+        </div>
+
+        <div class="pstats">
+            <div class="postsnum">1000</div>
+            <div class="poststext">Followers</div>
+        </div>
+    </div>
+    
+    <div class="Button"><button type="button">Follow</button></div>
+
+</div>
+
+{% endblock %}
